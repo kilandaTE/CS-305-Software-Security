@@ -1,23 +1,76 @@
-# CS-305-Software-Security
-## CS 305 Portfolio Reflection
+# CS 305 Portfolio Project: Artemis Financial Software Security
 
-### Artemis Financial and Software Requirements
-Artemis Financial is a financial consulting company that creates individualized financial plans for its customers. The company wanted to improve the security of its software application and protect sensitive customer and financial information. The main issue was making sure the application used secure communication and included a way to verify that transmitted data had not been changed.
+## Project Summary
 
-### Software Security Vulnerabilities
-One thing I did well was reviewing the application for security issues and adding protections such as HTTPS, a self-signed certificate, SHA-256 checksum verification, and dependency testing. Secure coding is important because it helps protect sensitive information from being exposed, changed, or accessed by unauthorized users. Software security also helps protect a company’s reputation and maintain customer trust.
+For this project, I worked with Artemis Financial, a financial consulting company that creates individualized financial plans for its customers.
 
-### Challenging and Helpful Parts
-One of the more challenging parts of the vulnerability assessment was working with the dependency-check tool and understanding which vulnerabilities were related to the existing dependencies. It was also helpful because it showed me how automated security tools can be used to identify known vulnerabilities in software components.
+The goal was to improve the security of an existing software application and better protect sensitive customer and financial information. The application needed secure communication and a method for verifying that transmitted data had not been altered.
 
-### Increasing Layers of Security
-I increased the layers of security by adding SHA-256 checksum verification, configuring the application to use HTTPS, creating a certificate, and using OWASP Dependency-Check. In the future, I would use tools such as dependency scanners, manual code reviews, vulnerability assessment frameworks, and current security standards to determine which vulnerabilities need to be addressed and which mitigation techniques should be used.
+## Security Improvements Implemented
 
-### Functional and Secure Code
-I tested the application after refactoring it to make sure it still worked correctly. I verified that the application started without errors, confirmed that the `/hash` endpoint returned the correct checksum, and tested the application over HTTPS. I also ran OWASP Dependency-Check again after making changes to help determine whether I had introduced any new vulnerabilities.
+- Configured HTTPS for secure communication
+- Created and applied a self-signed certificate
+- Added SHA-256 checksum verification
+- Used OWASP Dependency-Check to identify known vulnerabilities
+- Reviewed existing application dependencies
+- Refactored the application while maintaining functionality
+- Tested the application after security changes
 
-### Resources, Tools, and Coding Practices
-Some of the tools and practices that were helpful during this course were Java Keytool, SHA-256 hashing, HTTPS configuration, Maven, OWASP Dependency-Check, Eclipse, and manual code review. These tools and practices can also be useful in future software development and security assignments.
+## Technologies and Tools Used
 
-### What I Would Show Future Employers
-I would show future employers my Practices for Secure Software Report because it demonstrates that I can review an existing application, identify security concerns, add security features, test the application, and document the work I completed. It also shows my experience working with encryption, hashing, HTTPS, certificates, and vulnerability testing.
+- Java
+- Spring Boot
+- Maven
+- Eclipse
+- OWASP Dependency-Check
+- Java Keytool
+- HTTPS
+- SHA-256 Hashing
+- Digital Certificates
+- Manual Code Review
+
+## Vulnerability Assessment
+
+One of the main responsibilities in this project was reviewing the application for security weaknesses and identifying areas where stronger protections were needed.
+
+I used OWASP Dependency-Check to evaluate third-party dependencies for known vulnerabilities. This helped me understand how automated security tools can be used to identify risks within software components.
+
+## Increasing Application Security
+
+I strengthened the application by adding SHA-256 checksum verification, configuring HTTPS, creating a certificate, and using OWASP Dependency-Check.
+
+These changes added multiple layers of protection for data transmission and application integrity.
+
+## Testing and Validation
+
+After refactoring the application, I tested it to make sure it continued to function correctly.
+
+I verified that:
+
+- The application started without errors
+- The `/hash` endpoint returned the correct checksum
+- The application operated over HTTPS
+- Dependency testing still completed successfully
+- No obvious new vulnerabilities were introduced through the changes
+
+## Challenges I Faced
+
+One of the more challenging parts of the project was learning how to use OWASP Dependency-Check and understanding which vulnerabilities were connected to the application's existing dependencies.
+
+Working through this process helped me better understand how automated security scanning tools fit into the software development lifecycle.
+
+## What I Learned
+
+This project strengthened my understanding of:
+
+- Secure coding practices
+- Software vulnerability assessment
+- Dependency management
+- Encryption and hashing concepts
+- HTTPS configuration
+- Certificates
+- Security testing
+- Code review
+- Application testing after refactoring
+
+It also helped me understand the importance of building security into software throughout development rather than treating security as something added only at the end.
